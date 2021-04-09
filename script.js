@@ -1,14 +1,14 @@
 const sideNav = document.querySelector(".sideNav")
 const overlay = document.querySelector(".overlay")
-const ham = document.querySelector(".ham")
+const hamburger = document.querySelector(".ham")
 const menuX = document.querySelector(".menuX")
-const menuItems = document.querySelectorAll(".menuLink")
+const menucontents = document.querySelectorAll(".menuLink")
 
-menuItems.forEach(menuItem => {
-  menuItem.addEventListener("click", toggleHamburger)
+menucontents.forEach(menucontent => {
+  menucontent.addEventListener("click", toggleHamburger)
 })
 
-ham.addEventListener("click", toggleHamburger)
+hamburger.addEventListener("click", toggleHamburger)
 menuX.addEventListener("click", toggleHamburger)
 overlay.addEventListener("click", toggleHamburger)
 
