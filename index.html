@@ -8,34 +8,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="nav-bar">
+    <nav class="nav-bar">
         <div class="logo">Snapshot</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-
+        <div class="desktop-links">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        
          <!--MOBILE NAV SECTION-->
-    <div class="container">
-        <div class="nav-wrapper">
-            <button class="hamburger-menu">
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
-            </button>
-            <nav class="mobile-nav">
-                <ul class="mobile-nav-links">
-                    <li><a href="#" class="nav-link" data-text="Home">Home</a></li>
-                    <li><a href="#" class="nav-link" data-text="About Us">About Us</a></li>
-                    <li><a href="#" class="nav-link" data-text="Services">Gallery</a></li>
-                    <li><a href="#" class="nav-link" data-text="Contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>   
-    </div>
-    </div>
+        <button class="ham">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+    </nav>
 
     <div class="overlay"></div>
     <nav class="sideNav">
@@ -44,6 +34,13 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
+        <ul class="mobile-nav-links">
+            <li><a href="#" class="nav-link" data-text="Home">Home</a></li>
+            <li><a href="#" class="nav-link" data-text="About Us">About Us</a></li>
+            <li><a href="#" class="nav-link" data-text="Gallery">Gallery</a></li>
+            <li><a href="#" class="nav-link" data-text="Contact">Contact</a></li>
+        </ul>
+    </nav>
 
    
     <!-- Hero section -->
@@ -64,7 +61,6 @@
             <h4>Background</h4>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus sint ab rerum obcaecati totam neque quam corrupti dolores? Ipsam tempora consequatur quaerat. Voluptates accusamus molestiae nulla sapiente explicabo tempore possimus?</p>
         </div>
-        <div class="hero-background-pos"></div>
     </div>
     <div class="snapshot-team">
         <h2>Snapshot Team</h2>
@@ -123,6 +119,15 @@
             <input type="text" placeholder="Name"> 
             <input type="email" placeholder="Email">
         </div>
+        <div class="mobile-footer-input">
+            <div>
+                <input type="text" placeholder="Name"> 
+            </div>
+           <div>
+            <input type="email" placeholder="Email">
+           </div>
+        </div>
+
         <div class="footer-textarea">
             <textarea placeholder="Message"></textarea>
         </div>
